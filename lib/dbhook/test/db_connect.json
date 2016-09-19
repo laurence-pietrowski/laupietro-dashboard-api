@@ -1,0 +1,7 @@
+{
+	"host": "localhost",
+	"database": "dashboard",
+	"username": "db_fullaccess",
+	"password": "icycreepysemicolon",
+	"autocommit": 0
+}
