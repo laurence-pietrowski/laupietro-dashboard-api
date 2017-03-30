@@ -2,5 +2,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/v(\d)/(.*)$ main.php?realm=$1&version=$2&request=$3 [NC,L]
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^(.*)\/v(\d)\/(.*)$ main.php?realm=$1&version=$2&request=$3&%1 [NC,L]
 </IfModule>
